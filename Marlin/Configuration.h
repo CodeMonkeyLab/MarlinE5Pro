@@ -520,9 +520,9 @@
     #define DEFAULT_Ki_LIST {   1.54,   1.54 }
     #define DEFAULT_Kd_LIST {  76.55,  76.55 }
   #else
-    #define DEFAULT_Kp  35.19
-    #define DEFAULT_Ki   4.30
-    #define DEFAULT_Kd  71.94
+    #define DEFAULT_Kp  13.45
+    #define DEFAULT_Ki   0.91
+    #define DEFAULT_Kd  49.89
   #endif
 #endif // PIDTEMP
 
@@ -809,7 +809,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 101.36 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 929 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1058,7 +1058,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -44, -16, -1.9 }
+#define NOZZLE_TO_PROBE_OFFSET { -32.9, -1.6, -3.87 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1200,7 +1200,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR true
+#define INVERT_E0_DIR false
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
@@ -1235,8 +1235,8 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 230
-#define Y_BED_SIZE 225
+#define X_BED_SIZE 225
+#define Y_BED_SIZE 214
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
